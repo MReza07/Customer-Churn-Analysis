@@ -136,7 +136,6 @@ Subscription Year
 Admin Tickets = 
 CALCULATE(
     COUNTROWS('Churn-Dataset'),
-    
     'Churn-Dataset'[numTechTickets] = "Admin"
 )
 
