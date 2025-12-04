@@ -31,4 +31,157 @@ Subscription time under 1 year has the highest churn (31.04%).
 
 Partner & dependent status shows differing churn behavior across segments.
 
+📁 Dataset Overview
+
+The dataset includes customer-level information such as:
+
+Customer Demographics
+
+Payment Method & Billing Information
+
+Contract Type
+
+Subscription Duration
+
+Internet & Phone Service Usage
+
+Support Tickets
+
+Monthly & Yearly Charges
+
+Churn Indicator (Yes/No)
+
+## Dataset
+
+<a href="https://github.com/MReza07/Customer-Churn-Analysis/tree/main/dataset">Download Dataset<a/>
+
+## Data dictionary
+
+<img width="1323" height="337" alt="image" src="https://github.com/user-attachments/assets/594c25a6-6f7c-40c9-956b-b594ad669fe3" />
+
+
+## 🛠️ Tools & Technologies
+
+Power BI – Data modeling, DAX calculations, and dashboard creation
+
+Power Query – Data cleaning & transformation
+
+Excel / CSV – Raw dataset
+
+DAX Measures – For KPI calculations
+
+## 📁 Project Structure
+│── Dataset/
+
+│     └── Customer Churn-Dataset.xlsx
+
+│── PBIX/
+│     └── Churn analytics.pbix
+
+│── Dashboard Overview/
+
+      └── Customer Churn Analysis.JPG
+
+│     └── Churned Customer by Gender.PNG
+
+      └── Churned Customer by Paymentmethod.PNG
+       
+      └── Churned Customer by contract.PNG
+     └──  Churned by Tunure.PNG
+
+│── README.md
+
+
+
+## 📈 Main KPIs Measured
+
+Total Customers
+
+Churned Customers
+
+Churn Rate (%)
+
+Monthly & Yearly Charges
+
+Service Usage Metrics
+
+Subscription Tenure Distribution
+
+## 📊 Dashboard Features
+
+✔ Slicers for Gender, Contact, Payment Method, Churn Status, Tenure Year
+✔ Fully interactive segmentation
+✔ Donut charts, bar charts, card KPIs, and tables
+✔ Churn analysis segmented by:
+
+Gender
+
+Senior Citizens
+
+Partners & Dependents
+
+Payment Method
+
+Contracts
+
+Internet Service
+
+Subscription Year
+
+## 📐 Sample DAX Measures
+
+Admin Tickets = 
+CALCULATE(
+    COUNTROWS('Churn-Dataset'),
+    'Churn-Dataset'[numTechTickets] = "Admin"
+)
+
+Total Customer = COUNTROWS('Churn-Dataset')
+
+Churn Citizen% = DIVIDE([Churned Senior Citizens],[Churned Customers],0)
+
+Churn% = ([Churned Customers]/[Total Customer])
+
+Total Charge = CALCULATE(SUM('Churn-Dataset'[TotalCharges]),'Churn-Dataset'[Churn]="Yes")
+
+Monthly Charge = CALCULATE(SUM('Churn-Dataset'[MonthlyCharges]),'Churn-Dataset'[Churn]="Yes")
+
+
+
+## 🎯 Business Value
+
+Identify at-risk customers
+
+Understand churn drivers
+
+Improve customer retention strategies
+
+Optimize service offerings
+
+Support data-driven decisions for telecom teams
+
+
+## How to Open
+
+1. Clone repo
+2.    git clone https://github.com/MReza07/Customer-Churn-Analysis/tree/main/Report
+
+3.2. Open `PBIX/Sales Data Analysis.pbix` in Power BI Desktop (latest).
+
+3.  Go to Home → Transform Data → Refresh to load latest dataset.
+4.  4. If prompted, update data source to `Dataset/Dataset.xlsx` then Refresh.
+
+
+## 📜 License
+This project is released under the MIT License.
+
+## 📬 Contact
+
+Md. Rezaul Repon
+Data Analyst (Power BI | SQL | Python)
+🔗 GitHub: https://github.com/MReza07
+
+📧 Email:reazulrepon@gmail.com
+
+
 
