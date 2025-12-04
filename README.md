@@ -67,7 +67,15 @@ Churn Indicator (Yes/No)
 
 ## Data dictionary
 
-![Uploading image.png…]()
+| Column Name    | Description                                        |
+| -------------- | -------------------------------------------------- |
+| CustomerID     | Unique customer identifier                         |
+| Tenure         | Number of months customer stayed                   |
+| MonthlyCharges | Monthly cost of subscription                       |
+| TotalCharges   | Total payment till date                            |
+| Contract       | Contract type (Month-to-month, One year, Two year) |
+| Churn          | Whether customer left (Yes/No)                     |
+
 
 
 
@@ -82,25 +90,22 @@ Excel / CSV – Raw dataset
 DAX Measures – For KPI calculations
 
 ## 📁 Project Structure
+
+📁 Project Structure
 │── Dataset/
-
-│     └── Customer Churn-Dataset.xlsx
-
+│   └── Customer Churn-Dataset.xlsx
+│
 │── PBIX/
-│     └── Churn analytics.pbix
-
+│   └── Churn Analytics.pbix
+│
 │── Dashboard Overview/
-
-      └── Customer Churn Analysis.JPG
-
-│     └── Churned Customer by Gender.PNG
-
-      └── Churned Customer by Paymentmethod.PNG
-       
-      └── Churned Customer by contract.PNG
-     └──  Churned by Tunure.PNG
-
-│── README.md
+│   ├── Customer Churn Analysis.JPG
+│   ├── Churned Customer by Gender.PNG
+│   ├── Churned Customer by PaymentMethod.PNG
+│   ├── Churned Customer by Contract.PNG
+│   └── Churned by Tenure.PNG
+│
+└── README.md
 
 ## Project Workflow
 
@@ -187,18 +192,25 @@ Optimize service offerings
 
 Support data-driven decisions for telecom teams
 
+## 📂 How to Open the Report
 
-## How to Open
+To explore the Power BI dashboard:
 
-1. Clone repo
-2.    git clone https://github.com/MReza07/Customer-Churn-Analysis/tree/main/Report
+Download the PBIX File
 
-3.2. Open `PBIX/Sales Data Analysis.pbix` in Power BI Desktop (latest).
+Go to the Churn Analysis.pbix file in this repository.
 
-3.  Go to Home → Transform Data → Refresh to load latest dataset.
-4.  
-5.  4. If prompted, update data source to `Dataset/Dataset.xlsx` then Refresh.
+Click Download raw to save it.
 
+Open in Power BI Desktop
+
+Install Microsoft Power BI Desktop (free).
+
+Open the downloaded .pbix file.
+
+View Dataset (Optional)
+
+Download the CSV file stored in the Dataset/ folder to explore the raw data.
 
 ## 📜 License
 
