@@ -8,7 +8,6 @@
 “This Customer Churn Analysis project identifies churn drivers using Power BI, providing insights into customer retention patterns and risk indicators. The dashboard highlights churn trends by demographics, subscription type, and customer activity.
 ## 📷 Dashboard Preview
 
-![Dashboard](https://raw.githubusercontent.com/MReza07/Customer-Churn-Analysis/main/Dashboard%20Overview/Customer%20Churn%20Analysis.JPG)
 
 
 <a href="https://github.com/MReza07/Customer-Churn-Analysis/tree/main/dashboard%20Overview">View Dashboard<a/>
@@ -166,8 +165,6 @@ Churn Citizen% = DIVIDE([Churned Senior Citizens],[Churned Customers],0)
 Churn% = ([Churned Customers]/[Total Customer])
 
 Total Charge = CALCULATE(SUM('Churn-Dataset'[TotalCharges]),'Churn-Dataset'[Churn]="Yes")
-
-Monthly Charge = CALCULATE(SUM('Churn-Dataset'[MonthlyCharges]),'Churn-Dataset'[Churn]="Yes")
 
 Churn Rate = DIVIDE([Churned Customers], [Total Customers])
 
