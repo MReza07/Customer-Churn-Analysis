@@ -6,11 +6,20 @@
 
 
 “This Customer Churn Analysis project identifies churn drivers using Power BI, providing insights into customer retention patterns and risk indicators. The dashboard highlights churn trends by demographics, subscription type, and customer activity.
+
 ## 📷 Dashboard Preview
 
-
-
 <a href="https://github.com/MReza07/Customer-Churn-Analysis/tree/main/dashboard%20Overview">View Dashboard<a/>
+
+## Project Summary
+
+| Section             | Summary                          |
+| ------------------- | -------------------------------- |
+| **Dashboard**       | Customer Churn Analysis          |
+| **Tools**           | Power BI, Power Query, DAX       |
+| **Key KPIs**        | Churn %, Monthly Charges, Tenure |
+| **Business Output** | Identify customer churn drivers  |
+
 
 ## 🚀 Project Overview
 
@@ -58,12 +67,7 @@ Churn Indicator (Yes/No)
 
 ## Data dictionary
 
-| Section             | Summary                          |
-| ------------------- | -------------------------------- |
-| **Dashboard**       | Customer Churn Analysis          |
-| **Tools**           | Power BI, Power Query, DAX       |
-| **Key KPIs**        | Churn %, Monthly Charges, Tenure |
-| **Business Output** | Identify customer churn drivers  |
+![Uploading image.png…]()
 
 
 
