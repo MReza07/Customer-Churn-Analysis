@@ -1,97 +1,79 @@
-## 📊 Customer Churn Analytics Dashboard (Power BI)
+📊 Customer Churn Analytics Dashboard (Power BI)
 
-![License](https://img.shields.io/badge/License-MIT-blue)
-![Power BI](https://img.shields.io/badge/Tool-Power%20BI-orange)
+This Power BI project analyzes key churn drivers to help businesses understand why customers leave and identify high-risk segments. The dashboard uncovers churn patterns across demographics, subscription types, service usage, and customer activity.
 
+📷 Dashboard Preview
 
+👉 View Dashboard (Add your image link here)
 
-“This Customer Churn Analysis project identifies churn drivers using Power BI, providing insights into customer retention patterns and risk indicators. The dashboard highlights churn trends by demographics, subscription type, and customer activity.
+📝 Project Summary
+Section	Summary
+Dashboard	Customer Churn Analysis
+Tools	Power BI, Power Query, DAX
+Key KPIs	Churn %, Monthly Charges, Tenure
+Business Output	Identify churn drivers & high-risk customer groups
+🚀 Project Overview
 
-## 📷 Dashboard Preview
+Customer churn is a critical KPI for subscription-based businesses. This analysis examines churn behavior through demographic attributes, contract types, service usage, billing details, and tenure.
+The dashboard helps decision-makers detect churn-prone segments and design data-driven retention strategies.
 
-<a href="https://github.com/MReza07/Customer-Churn-Analysis/tree/main/dashboard%20Overview">View Dashboard<a/>
+📌 Key Insights (At a Glance)
 
-## Project Summary
+Overall Churn Rate: 26.54% (1,869 churned out of 7,043 customers)
 
-| Section             | Summary                          |
-| ------------------- | -------------------------------- |
-| **Dashboard**       | Customer Churn Analysis          |
-| **Tools**           | Power BI, Power Query, DAX       |
-| **Key KPIs**        | Churn %, Monthly Charges, Tenure |
-| **Business Output** | Identify customer churn drivers  |
-
-
-## 🚀 Project Overview
-
-Customer churn is one of the most important KPIs for subscription-based businesses. This Power BI dashboard analyzes churn patterns by demographic attributes, subscription tenure, service usage, payment method, and account information. It enables decision-makers to detect high-risk segments and optimize retention strategies.
-
-## 📌 Key Insights (At a Glance)
-
-Churn Rate: 26.54% with 1,869 customers churned out of 7,043 total customers.
-
-Higher churn among:
+Churn is significantly higher among:
 
 Customers with paperless billing
 
-Month-to-month contracts
+Month-to-month contract holders
 
-Internet users with fiber optic service
+Users with fiber optic internet
 
-Subscription time under 1 year has the highest churn (31.04%).
+Customers with less than 1 year of subscription (31.04%)
 
-Partner & dependent status shows differing churn behavior across segments.
+Partner & dependent status shows distinct churn behavior across segments.
 
-## 📁 Dataset Overview
+📁 Dataset Overview
 
-The dataset includes customer-level information such as:
+Contains customer-level information including:
 
-Customer Demographics
+Demographics
 
-Payment Method & Billing Information
+Billing & Payment Method
 
 Contract Type
 
-Subscription Duration
+Tenure & Subscription Duration
 
 Internet & Phone Service Usage
 
 Support Tickets
 
-Monthly & Yearly Charges
+Charges (Monthly & Total)
 
-Churn Indicator (Yes/No)
+Churn Status (Yes/No)
 
-## Dataset
+👉 Download Dataset
 
-<a href="https://github.com/MReza07/Customer-Churn-Analysis/tree/main/dataset">Download Dataset<a/>
+📘 Data Dictionary
+Column Name	Description
+CustomerID	Unique customer identifier
+Tenure	Number of months customer stayed
+MonthlyCharges	Monthly subscription fees
+TotalCharges	Total payment till date
+Contract	Type of contract (1, 12, 24 months)
+Churn	Whether customer left (Yes/No)
+🛠️ Tools & Technologies
 
-## Data dictionary
-
-| Column Name    | Description                                        |
-| -------------- | -------------------------------------------------- |
-| CustomerID     | Unique customer identifier                         |
-| Tenure         | Number of months customer stayed                   |
-| MonthlyCharges | Monthly cost of subscription                       |
-| TotalCharges   | Total payment till date                            |
-| Contract       | Contract type (Month-to-month, One year, Two year) |
-| Churn          | Whether customer left (Yes/No)                     |
-
-
-
-
-## 🛠️ Tools & Technologies
-
-Power BI – Data modeling, DAX calculations, and dashboard creation
+Power BI – Data modeling & dashboard development
 
 Power Query – Data cleaning & transformation
 
-Excel / CSV – Raw dataset
+DAX – KPI calculations
 
-DAX Measures – For KPI calculations
+Excel/CSV – Raw dataset storage
 
-## 📁 Project Structure
-
-📁 Project Structure
+📂 Project Structure
 │── Dataset/
 │   └── Customer Churn-Dataset.xlsx
 │
@@ -107,21 +89,21 @@ DAX Measures – For KPI calculations
 │
 └── README.md
 
-## Project Workflow
+🧭 Project Workflow
 
 Data Collection
 
-Data Cleaning (handling blanks, data types, transformations)
+Data Cleaning & Transformation (Power Query)
 
-Exploratory Analysis
+Exploratory Data Analysis
 
-Power BI Modeling (DAX, relationships)
+Data Modeling & DAX Calculations
 
-Visualization & Insights
+Dashboard Design & Visualization
 
+Insights & Business Recommendations
 
-
-## 📈 Main KPIs Measured
+📈 Main KPIs Measured
 
 Total Customers
 
@@ -129,102 +111,93 @@ Churned Customers
 
 Churn Rate (%)
 
-Monthly & Yearly Charges
+Tenure Distribution
+
+Monthly / Yearly Charges
 
 Service Usage Metrics
 
-Subscription Tenure Distribution
+📊 Dashboard Features
 
-## 📊 Dashboard Features
-
-✔ Slicers for Gender, Contact, Payment Method, Churn Status, Tenure Year
-
-✔ Fully interactive segmentation
-
-✔ Donut charts, bar charts, card KPIs, and tables
-
-✔ Churn analysis segmented by:
+✔ Gender, Contract, Payment Method, Tenure slicers
+✔ Highly interactive visual exploration
+✔ Donut charts, KPIs, bar charts & summary tables
+✔ Churn segmentation by:
 
 Gender
 
-Senior Citizens
+Senior Citizenship
 
-Partners & Dependents
+Partner & Dependent Status
+
+Contract Type
 
 Payment Method
 
-Contracts
+Internet Service Type
 
-Internet Service
+Subscription Tenure
 
-Subscription Year
+📐 Sample DAX Measures
+Admin Tickets =
+CALCULATE(COUNTROWS('Churn-Dataset'), 'Churn-Dataset'[numTechTickets] = "Admin")
 
-## 📐 Sample DAX Measures
+Total Customer =
+COUNTROWS('Churn-Dataset')
 
-Admin Tickets = 
-CALCULATE(
-    COUNTROWS('Churn-Dataset'),
-    'Churn-Dataset'[numTechTickets] = "Admin"
-)
+Churn Citizen% =
+DIVIDE([Churned Senior Citizens], [Churned Customers], 0)
 
-Total Customer = COUNTROWS('Churn-Dataset')
+Churn% =
+DIVIDE([Churned Customers], [Total Customer])
 
-Churn Citizen% = DIVIDE([Churned Senior Citizens],[Churned Customers],0)
+Total Charge =
+CALCULATE(SUM('Churn-Dataset'[TotalCharges]), 'Churn-Dataset'[Churn] = "Yes")
 
-Churn% = ([Churned Customers]/[Total Customer])
+Churn Rate =
+DIVIDE([Churned Customers], [Total Customers])
 
-Total Charge = CALCULATE(SUM('Churn-Dataset'[TotalCharges]),'Churn-Dataset'[Churn]="Yes")
+🎯 Business Value
 
-Churn Rate = DIVIDE([Churned Customers], [Total Customers])
+Identify at-risk customers early
 
+Understand churn motivations
 
+Optimize retention strategies
 
+Improve service offerings
 
-## 🎯 Business Value
+Support data-driven decision-making
 
-Identify at-risk customers
-
-Understand churn drivers
-
-Improve customer retention strategies
-
-Optimize service offerings
-
-Support data-driven decisions for telecom teams
-
-## 📂 How to Open the Report
+📂 How to Open the Report
 
 To explore the Power BI dashboard:
 
-Download the PBIX File
+1. Download the PBIX File
 
-Go to the Churn Analysis.pbix file in this repository.
+Open the Churn Analytics.pbix file in the PBIX/ folder
 
-Click Download raw to save it.
+Click Download raw
 
-Open in Power BI Desktop
+2. Open in Power BI Desktop
 
-Install Microsoft Power BI Desktop (free).
+Install Microsoft Power BI Desktop (free)
 
-Open the downloaded .pbix file.
+Open the downloaded .pbix file
 
-View Dataset (Optional)
+3. View Dataset (Optional)
 
-Download the CSV file stored in the Dataset/ folder to explore the raw data.
+Download the dataset from the Dataset/ folder
 
-## 📜 License
+📜 License
 
 This project is released under the MIT License.
 
-## 📬 Contact
+📬 Contact
 
 Md. Rezaul Repon
-
 Data Analyst (Power BI | SQL | Python)
 
 🔗 GitHub: https://github.com/MReza07
 
-📧 Email:reazulrepon@gmail.com
-
-
-
+📧 Email: reazulrepon@gmail.com
