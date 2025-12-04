@@ -4,14 +4,16 @@ This Power BI project analyzes key churn drivers to help businesses understand w
 
 📷 Dashboard Preview
 
-👉 View Dashboard (Add your image link here)
+👉 View Dashboard [(Add your image link here)](https://github.com/MReza07/Customer-Churn-Analysis/tree/main/dashboard%20Overview)
 
 📝 Project Summary
+
 Section	Summary
 Dashboard	Customer Churn Analysis
 Tools	Power BI, Power Query, DAX
 Key KPIs	Churn %, Monthly Charges, Tenure
 Business Output	Identify churn drivers & high-risk customer groups
+
 🚀 Project Overview
 
 Customer churn is a critical KPI for subscription-based businesses. This analysis examines churn behavior through demographic attributes, contract types, service usage, billing details, and tenure.
@@ -53,16 +55,24 @@ Charges (Monthly & Total)
 
 Churn Status (Yes/No)
 
-👉 Download Dataset
+👉 Download Dataset https://github.com/MReza07/Customer-Churn-Analysis/tree/main/dataset
 
 📘 Data Dictionary
+
 Column Name	Description
+
 CustomerID	Unique customer identifier
+
 Tenure	Number of months customer stayed
+
 MonthlyCharges	Monthly subscription fees
+
 TotalCharges	Total payment till date
+
 Contract	Type of contract (1, 12, 24 months)
+
 Churn	Whether customer left (Yes/No)
+
 🛠️ Tools & Technologies
 
 Power BI – Data modeling & dashboard development
@@ -74,17 +84,25 @@ DAX – KPI calculations
 Excel/CSV – Raw dataset storage
 
 📂 Project Structure
+
 │── Dataset/
+
 │   └── Customer Churn-Dataset.xlsx
 │
 │── PBIX/
+
 │   └── Churn Analytics.pbix
 │
 │── Dashboard Overview/
+
 │   ├── Customer Churn Analysis.JPG
+
 │   ├── Churned Customer by Gender.PNG
+
 │   ├── Churned Customer by PaymentMethod.PNG
+
 │   ├── Churned Customer by Contract.PNG
+
 │   └── Churned by Tenure.PNG
 │
 └── README.md
@@ -120,8 +138,11 @@ Service Usage Metrics
 📊 Dashboard Features
 
 ✔ Gender, Contract, Payment Method, Tenure slicers
+
 ✔ Highly interactive visual exploration
+
 ✔ Donut charts, KPIs, bar charts & summary tables
+
 ✔ Churn segmentation by:
 
 Gender
@@ -139,6 +160,7 @@ Internet Service Type
 Subscription Tenure
 
 📐 Sample DAX Measures
+
 Admin Tickets =
 CALCULATE(COUNTROWS('Churn-Dataset'), 'Churn-Dataset'[numTechTickets] = "Admin")
 
