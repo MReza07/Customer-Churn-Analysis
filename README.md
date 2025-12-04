@@ -5,8 +5,7 @@
 
 
 
-This project provides a comprehensive analysis of customer churn to help businesses identify churn drivers, understand customer behavior, and build better retention strategies. The dashboard visualizes key KPIs, customer demographics, subscription patterns, service usage, and churn factors in an interactive and actionable format.
-
+“This Customer Churn Analysis project identifies churn drivers using Power BI, providing insights into customer retention patterns and risk indicators. The dashboard highlights churn trends by demographics, subscription type, and customer activity.
 ## 📷 Dashboard Preview
 
 <a href="https://github.com/MReza07/Customer-Churn-Analysis/tree/main/dashboard%20Overview">View Dashboard<a/>
@@ -57,7 +56,15 @@ Churn Indicator (Yes/No)
 
 ## Data dictionary
 
-<img width="1323" height="337" alt="image" src="https://github.com/user-attachments/assets/594c25a6-6f7c-40c9-956b-b594ad669fe3" />
+| Column Name    | Description                     |
+| -------------- | ------------------------------- |
+| CustomerID     | Unique customer identifier      |
+| Tenure         | Months customer has stayed      |
+| MonthlyCharges | Monthly payment amount          |
+| Contract       | Subscription type               |
+| Churn          | Whether customer left or stayed |
+
+
 
 
 ## 🛠️ Tools & Technologies
@@ -90,6 +97,18 @@ DAX Measures – For KPI calculations
      └──  Churned by Tunure.PNG
 
 │── README.md
+
+## Project Workflow
+
+Data Collection
+
+Data Cleaning (handling blanks, data types, transformations)
+
+Exploratory Analysis
+
+Power BI Modeling (DAX, relationships)
+
+Visualization & Insights
 
 
 
@@ -148,6 +167,9 @@ Churn% = ([Churned Customers]/[Total Customer])
 Total Charge = CALCULATE(SUM('Churn-Dataset'[TotalCharges]),'Churn-Dataset'[Churn]="Yes")
 
 Monthly Charge = CALCULATE(SUM('Churn-Dataset'[MonthlyCharges]),'Churn-Dataset'[Churn]="Yes")
+
+Churn Rate = DIVIDE([Churned Customers], [Total Customers])
+
 
 
 
