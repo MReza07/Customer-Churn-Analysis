@@ -4,7 +4,7 @@ This Power BI project analyzes key churn drivers to help businesses understand w
 
 📷 Dashboard Preview
 
-👉 View Dashboard [(Add your image link here)](https://github.com/MReza07/Customer-Churn-Analysis/tree/main/dashboard%20Overview)
+👉 View Dashboard https://github.com/MReza07/Customer-Churn-Analysis/tree/main/dashboard%20Overview
 
 📝 Project Summary
 
