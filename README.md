@@ -1,6 +1,5 @@
 📊 Customer Churn Analytics Dashboard (Power BI)
 
-This Power BI project analyzes key churn drivers to help businesses understand why customers leave and identify high-risk segments. The dashboard uncovers churn patterns across demographics, subscription types, service usage, and customer activity.
 
 🚀 Project Overview
 
