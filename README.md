@@ -1,12 +1,12 @@
-📊 Customer Churn Analytics Dashboard (Power BI)
+## 📊 Customer Churn Analytics Dashboard (Power BI)
 
 
-🚀 Project Overview
+## 🚀 Project Overview
 
 Customer churn is a critical KPI for subscription-based businesses. This analysis examines churn behavior through demographic attributes, contract types, service usage, billing details, and tenure.
 The dashboard helps decision-makers detect churn-prone segments and design data-driven retention strategies.
 
-📌 Key Insights (At a Glance)
+## 📌 Key Insights (At a Glance)
 
 Overall Churn Rate: 26.54% (1,869 churned out of 7,043 customers)
 
@@ -22,9 +22,7 @@ Customers with less than 1 year of subscription (31.04%)
 
 Partner & dependent status shows distinct churn behavior across segments.
 
-📁 Dataset Overview
-
-Contains customer-level information including:
+## 📁 Dataset Overview
 
 Demographics
 
@@ -44,7 +42,7 @@ Churn Status (Yes/No)
 
 👉 Download Dataset https://github.com/MReza07/Customer-Churn-Analysis/tree/main/dataset
 
-📘 Data Dictionary
+## 📘 Data Dictionary
 
 Column Name	Description
 
@@ -70,7 +68,7 @@ DAX – KPI calculations
 
 Excel/CSV – Raw dataset storage
 
-📂 Project Structure
+## 📂 Project Structure
 
 │── Dataset/
 
@@ -146,7 +144,7 @@ Internet Service Type
 
 Subscription Tenure
 
-📐 Sample DAX Measures
+## 📐 Sample DAX Measures
 
 Admin Tickets =
 CALCULATE(COUNTROWS('Churn-Dataset'), 'Churn-Dataset'[numTechTickets] = "Admin")
@@ -166,7 +164,7 @@ CALCULATE(SUM('Churn-Dataset'[TotalCharges]), 'Churn-Dataset'[Churn] = "Yes")
 Churn Rate =
 DIVIDE([Churned Customers], [Total Customers])
 
-🎯 Business Value
+## 🎯 Business Value
 
 Identify at-risk customers early
 
@@ -178,7 +176,7 @@ Improve service offerings
 
 Support data-driven decision-making
 
-📂 How to Open the Report
+## 📂 How to Open the Report
 
 To explore the Power BI dashboard:
 
@@ -198,13 +196,14 @@ Open the downloaded .pbix file
 
 Download the dataset from the Dataset/ folder
 
-📜 License
+## 📜 License
 
 This project is released under the MIT License.
 
-📬 Contact
+## 📬 Contact
 
 Md. Rezaul Repon
+
 Data Analyst (Power BI | SQL | Python)
 
 🔗 GitHub: https://github.com/MReza07
