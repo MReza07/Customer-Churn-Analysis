@@ -2,18 +2,6 @@
 
 This Power BI project analyzes key churn drivers to help businesses understand why customers leave and identify high-risk segments. The dashboard uncovers churn patterns across demographics, subscription types, service usage, and customer activity.
 
-📷 Dashboard Preview
-
-👉 View Dashboard https://github.com/MReza07/Customer-Churn-Analysis/tree/main/dashboard%20Overview
-
-📝 Project Summary
-
-Section	Summary
-Dashboard	Customer Churn Analysis
-Tools	Power BI, Power Query, DAX
-Key KPIs	Churn %, Monthly Charges, Tenure
-Business Output	Identify churn drivers & high-risk customer groups
-
 🚀 Project Overview
 
 Customer churn is a critical KPI for subscription-based businesses. This analysis examines churn behavior through demographic attributes, contract types, service usage, billing details, and tenure.
