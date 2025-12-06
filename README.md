@@ -44,7 +44,7 @@ Churn Status (Yes/No)
 
 ## 📘 Data Dictionary
 
-Column Name	           Description
+Column Name	   ------  Description
 
 CustomerID	          Unique customer identifier
 
