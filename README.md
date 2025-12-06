@@ -44,19 +44,19 @@ Churn Status (Yes/No)
 
 ## 📘 Data Dictionary
 
-Column Name	   ------  Description
+Column Name	       ------      Description
 
-CustomerID	          Unique customer identifier
+CustomerID	       ------      Unique customer identifier
 
-Tenure	              Number of months customer stayed
+Tenure	           ------      Number of months customer stayed
 
-MonthlyCharges	      Monthly subscription fees
+MonthlyCharges	   ------     Monthly subscription fees
 
-TotalCharges	       Total payment till date
+TotalCharges	     ------     Total payment till date
 
-Contract	           Type of contract (1, 12, 24 months)
+Contract	        ------     Type of contract (1, 12, 24 months)
 
-Churn	W              hether customer left (Yes/No)
+Churn	W           ------     hether customer left (Yes/No)
 
 🛠️ Tools & Technologies
 
